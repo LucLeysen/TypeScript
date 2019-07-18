@@ -21,7 +21,7 @@ Compiler
 
 typescript (.ts file) => tsc => JavaScript
 
-- Keywords -
+--- Keywords ---
 * class
 * constructor
 * exports
@@ -33,5 +33,9 @@ typescript (.ts file) => tsc => JavaScript
 * public / private
 * ...   = Rest parameter syntax
 * => = Arrow syntax used by definitions and functions
-* <typeName> = <> characters use to cast / convert between types
+* <typeName> = <> characters use to cast/convert between types
 * : = separator between variable/parameter names and types
+
+typescript plagound: http://www.typescriptlang.org/play/
+
+--- node js ---
