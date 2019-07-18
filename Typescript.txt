@@ -14,3 +14,24 @@ Typed superset of JavaScript       =>   typescriptlang.org
     classes
     modules
     interfaces
+    lambdas
+    intellisense and syntax checking
+
+Compiler
+
+typescript (.ts file) => tsc => JavaScript
+
+- Keywords -
+* class
+* constructor
+* exports
+* extends
+* implements
+* imports
+* interface
+* module / namespace = container
+* public / private
+* ...   = Rest parameter syntax
+* => = Arrow syntax used by definitions and functions
+* <typeName> = <> characters use to cast / convert between types
+* : = separator between variable/parameter names and types
