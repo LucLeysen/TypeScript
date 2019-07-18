@@ -1,0 +1,16 @@
+* Typescript fundamentals *
+---------------------------
+
+Typed superset of JavaScript       =>   typescriptlang.org
+
+=>  any browser
+    any host
+    any os
+    open source
+    Tool support
+
+=>  static typing
+    encapsulation
+    classes
+    modules
+    interfaces
