@@ -1,17 +1,17 @@
-var Car = /** @class */ (function () {
-    function Car(engine) {
+class Car {
+    constructor(engine) {
         this.engine = engine;
     }
-    Car.prototype.start = function () {
+    start() {
         alert("Engine started: " + this.engine);
-    };
-    Car.prototype.stop = function () {
+    }
+    stop() {
         alert("Engine stopped: " + this.engine);
-    };
-    return Car;
-}());
+    }
+}
 window.onload = function () {
     var car = new Car("V8");
     car.start();
     car.stop();
 };
+//# sourceMappingURL=Car.js.map
