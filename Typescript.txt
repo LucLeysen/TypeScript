@@ -38,4 +38,19 @@ typescript (.ts file) => tsc => JavaScript
 
 typescript plagound: http://www.typescriptlang.org/play/
 
---- node js ---
+
+--- Type Interference ---
+var num = 2;  => num is of type number because 2 is a number
+
+--- Type annotation ---
+var num: number = 2;
+
+* any = base type of everything
+
+var any1;                       => type is any
+var num1: number;               => Type annotation
+var num2: number = 2;           => Type annotation setting the value
+var num3 = 3;                   => Type Interference (number)
+var num4 = num3 + 100;          => Type Interference (number)
+
+var str1 = num1 + 'hi'          => this will work (num1 to string) Type Interference (string)
