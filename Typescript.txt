@@ -54,3 +54,71 @@ var num3 = 3;                   => Type Interference (number)
 var num4 = num3 + 100;          => Type Interference (number)
 
 var str1 = num1 + 'hi'          => this will work (num1 to string) Type Interference (string)
+
+--- Dynamic                                <-->         Static ---
+- TypeScript -------------------------------|---------- JavaScript -
+Static typing (optional)                    |              Dynamic typing
+Type safety in a compile-time feature       |              Type safety at run-time debugging
+
+--- Ambiant declaration ---
+declare var document;
+document.title = "Hello";
+(lib.d.ts file referenced by default)
+
+--- Type definition Files (Declaration Source Files)---
+/// <reference path="jquery.d.ts />     => Helps provide types for jquery
+declare var $;
+var data = "Hi John';
+$("div").text(data);
+
+https://github.com/Microsoft/TypeScript
+/// <reference path="typings/knockout-2.2.d.ts/>
+
+--- Primitive Types ---
+* number
+    var age: number = 2;
+    var rating: number = 98.25;
+* boolean
+    var hasValue: boolean = true;
+* string
+    var firstName: string = 'Luc';
+* arrays
+    var names: string[] = ['John', 'Dan', 'Aaron', 'Fritz'];    => array
+    var firstPerson = names[0];                                 => indexer
+* null
+    var num: number = null;
+    var str: string = null;
+    var isHappy: boolean = null;
+    var customer: {} = null;
+
+    Null type is a subtype of all primitives (except void and undefined).
+
+    var age: number;                => undefined    type number
+    var customer = undefined;       => undefined    type any
+
+    undefined type is a subtype of all types.
+
+--- Object Types ---
+* Object literals
+    var square = {h: 10, w: 20};
+    var points: Object = { x: 10, y: 20};
+* functions
+    var multiply = function(x: number) {
+        return x * x;
+    };
+
+    var multiplyMore: Function;
+    multiplyMore: function (x: number){
+        return x * x;
+    }
+
+    * x? => optional parameter
+
+--- Functions ---
+* parameter types (required or optional (?))
+* arrow function expressions (lambda's)
+    compact form of function expressions
+    omit the function Keywords
+    have scope of this
+* void
+    Used as the return type for functions that return no value
