@@ -133,3 +133,11 @@ https://github.com/Microsoft/TypeScript
 
 * ===   =>  equal
 * !==   =>  not equal
+
+--- Class ---
+* Fields
+* Constructors
+* Properties
+* Functions
+
+* Complex types

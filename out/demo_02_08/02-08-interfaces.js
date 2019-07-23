@@ -23,7 +23,7 @@ var demo_02_08;
             return msg + ', ' + this.name;
         },
         makeYounger: function (years) {
-            this.age = this.age - years;
+            this.age -= years;
         }
     };
     var pets = p.calcPets();
