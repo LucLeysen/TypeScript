@@ -122,3 +122,14 @@ https://github.com/Microsoft/TypeScript
     have scope of this
 * void
     Used as the return type for functions that return no value
+* var myFunc = function (h: number, w: number){
+    return h * w;
+}
+    var myFunc = (h: number, w: number) => h * w;
+* var greetMe: (msg: string) => void
+    greetMe = function (msg){
+        console.log(msg);
+    }
+
+* ===   =>  equal
+* !==   =>  not equal
