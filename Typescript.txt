@@ -141,3 +141,13 @@ https://github.com/Microsoft/TypeScript
 * Functions
 
 * Complex types
+
+* casting
+    var table : HTMLTableElement = <HTMLTableElement>document.createElement('table');
+
+--- Type Definition files ---
+* As you work with the DOM or other libraries you need a Type Definition file (*.d.ts file)
+    lib.d.ts file is built-in of the box for the DOM and JavaScript
+* Additional Type Definition files for 3th party scripts at:
+    https://github.com/borisyankov/DefinitelyTyped
+    http://definitelytyped.org

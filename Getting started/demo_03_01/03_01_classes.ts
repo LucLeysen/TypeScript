@@ -27,13 +27,11 @@ module demo_03_01 {
         }
     }
 
-window.onload = function(){
-    var engine= new Engine(300,'V8');
-    var car = new Car(engine);
+    window.onload = function () {
+        var engine = new Engine(300, 'V8');
+        var car = new Car(engine);
 
-    alert(car.engine.engineType);
-    car.start();
-}
-
-
+        alert(car.engine.engineType);
+        car.start();
+    }
 }
