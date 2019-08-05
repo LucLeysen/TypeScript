@@ -151,3 +151,11 @@ https://github.com/Microsoft/TypeScript
 * Additional Type Definition files for 3th party scripts at:
     https://github.com/borisyankov/DefinitelyTyped
     http://definitelytyped.org
+
+--- Extending types ---
+* extends keyword => derives from
+    class ChildClass extends ParentClass{
+        constructor(){
+            super();
+        }
+    }

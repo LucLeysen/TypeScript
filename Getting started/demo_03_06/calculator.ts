@@ -1,4 +1,4 @@
-module demo_03_01 {
+module demo_03_06 {
     window.onload = function () {
         var calc = new Calculator('X', 'Y', 'Output')
     }

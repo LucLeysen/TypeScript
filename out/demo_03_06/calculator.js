@@ -1,5 +1,5 @@
-var demo_03_01;
-(function (demo_03_01) {
+var demo_03_06;
+(function (demo_03_06) {
     window.onload = function () {
         var calc = new Calculator('X', 'Y', 'Output');
     };
@@ -26,5 +26,5 @@ var demo_03_01;
             ;
         }
     }
-})(demo_03_01 || (demo_03_01 = {}));
+})(demo_03_06 || (demo_03_06 = {}));
 //# sourceMappingURL=calculator.js.map
