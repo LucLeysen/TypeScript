@@ -159,3 +159,8 @@ https://github.com/Microsoft/TypeScript
             super();
         }
     }
+
+--- Interfaces ---
+* implements keyword => implementys interface
+    class Engine implements IEngine{}
+* interface extends baseInterface
