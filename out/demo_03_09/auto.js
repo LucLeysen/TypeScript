@@ -1,5 +1,5 @@
-var demo_03_08;
-(function (demo_03_08) {
+var demo_03_09;
+(function (demo_03_09) {
     class Engine {
         constructor(horsePower, engineType) {
             this.horsePower = horsePower;
@@ -23,11 +23,12 @@ var demo_03_08;
         }
     }
     class Auto {
-        constructor(basePrice, engine, make, model) {
-            this.engine = engine;
-            this.basePrice = basePrice;
-            this.make = make;
-            this.model = model;
+        constructor(options) {
+            this.engine = options.engine;
+            this.basePrice = options.basePrice;
+            this.make = options.make;
+            this.model = options.model;
+            this.year = options.year;
         }
         calculateTotal() {
             var taxRate = .08;
@@ -59,18 +60,26 @@ var demo_03_08;
         }
     }
     class Truck extends Auto {
-        constructor(basePrice, engine, make, model, bedLength, foorByFour) {
-            super(basePrice, engine, make, model);
-            this.bedLength = bedLength;
-            this.foorByFour = foorByFour;
+        constructor(options) {
+            super(options);
+            this.bedLength = options.bedLength;
+            this.fourByFour = options.fourByFour;
         }
     }
     window.onload = function () {
-        var truck = new Truck(40000, new Engine(300, 'V8'), 'Chevy', 'Silverado', 'Long Bed', true);
+        var truck = new Truck({
+            engine: new Engine(250, 'V6'),
+            basePrice: 45000,
+            make: 'Chevy',
+            model: 'Silverado',
+            bedLength: 'Long Bed',
+            fourByFour: true,
+            year: 2000
+        });
         truck.addAccessories(new Accessory(1234, 'Sunroof'), new Accessory(4321, 'Towing package'));
         truck.engine.start((status, engineType) => {
             alert(engineType + ' was started');
         });
     };
-})(demo_03_08 || (demo_03_08 = {}));
+})(demo_03_09 || (demo_03_09 = {}));
 //# sourceMappingURL=auto.js.map
