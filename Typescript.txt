@@ -164,3 +164,18 @@ https://github.com/Microsoft/TypeScript
 * implements keyword => implementys interface
     class Engine implements IEngine{}
 * interface extends baseInterface
+
+--- Modules ---
+* export class ...
+* External modules
+    separately loadable
+    Exported entities can be imported into other modules
+    import viewmodels = require('./viewmodels')
+    CommonJS or AMD Conventions (http://requirejs.org/)
+* AMD
+    Asynchronous Module Definition
+    Manage Dependencies
+    Loads them asynchronously
+    Loads modules in sequence
+        Based on definition dependencies
+    require.js needed
