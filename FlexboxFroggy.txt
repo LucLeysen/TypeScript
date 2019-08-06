@@ -14,7 +14,7 @@
     - flex-start: elementen worden uitgelijnd naar de bovenkant van de container
     - flex-end: elementen worden uitgelijnd naar de onderkant van de container
     - center: elementen worden uitgelijnd op het vertikaal middelpunt van de container
-    - baseline: elementen worden uitgelijnd de basislijn van de container
+    - baseline: elementen worden uitgelijnd op de basislijn van de container
     - stretch: elementen worden uitgerokken om binnen de container te passen
 
 * flex-direction: bepaald de richting in dewelke de elementen in hun container geplaatst worden.
@@ -22,3 +22,25 @@
     - row-reverse: elementen worden geplaatst in tegenovergestelde richting als deze van de tekst (start en stop zijn ook omgekeerd)
     - column: elementen worden onder elkaar geplaatst
     - column-reverse: elementen worden boven elkaar geplaatst
+
+* align-self: individueel, zelfde waardes als align-items
+
+* order: verander volgorde
+
+* flex-wrap: verspreid elementen
+    - nowrap: alle elementen worden samengepakt op een enkele lijn
+    - wrap: elementen worden over meerdere lijnen gewikkeld
+    - wrap-reverse: elementen worden over meerdere lijnen in omgekeerde richting gewikkeld
+
+* flex-flow: combinatie van flex-direction en flex-wrap
+
+* align-content spaciëring tussen meerdere lijnen
+    - flex-start: lijnen worden aan de bovenzijde van de container verpakt
+    - flex-end: lijnen worden aan de onderzijde van de container verpakt
+    - center: lijnen worden op het vertikale center van de container verpakt
+    - space-between: lijnen worden gedistribueerd over de volledige dimensie en krijgen een gelijke spatiëring tussen elke lijn.
+    - space-around: lijnen worden gedistribueerd over de volledige dimensie en krijgen een gelijke spatiëring rond elke lijn.
+    - stretch: lijnen worden uitgerokken om in de container te passen.
+
+
+Als de flex-direction = column, dan is justify-content van toepassing op de vertikale as
