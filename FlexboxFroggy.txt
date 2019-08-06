@@ -1,0 +1,24 @@
+#pond {
+    display: flex;
+     ...
+}
+
+* justify-content: horizontale uitlijning
+    - flex-start: elementen aan de linkerkant van de container uitlijnen
+    - flex-end: elementen aan de rechterkant van de container uitlijnen
+    - center: elementen in het midden van de container uitlijnen
+    - space-between: elementen met gelijke spaciëring tussen hun opstellen
+    - space-around: elementen met gelijke spaciëring rond hun opstellen
+
+* align-items: verticale uitlijning
+    - flex-start: elementen worden uitgelijnd naar de bovenkant van de container
+    - flex-end: elementen worden uitgelijnd naar de onderkant van de container
+    - center: elementen worden uitgelijnd op het vertikaal middelpunt van de container
+    - baseline: elementen worden uitgelijnd de basislijn van de container
+    - stretch: elementen worden uitgerokken om binnen de container te passen
+
+* flex-direction: bepaald de richting in dewelke de elementen in hun container geplaatst worden.
+    - row: elementen worden geplaatst in dezelfde richting als deze van de tekst
+    - row-reverse: elementen worden geplaatst in tegenovergestelde richting als deze van de tekst (start en stop zijn ook omgekeerd)
+    - column: elementen worden onder elkaar geplaatst
+    - column-reverse: elementen worden boven elkaar geplaatst
